@@ -87,6 +87,7 @@
         width: auto;
         height: 40px;
         font-size: 30px;
+        background-color: lightgrey;
     }
     .delete-button, .expand-button {
         height: 40px;
