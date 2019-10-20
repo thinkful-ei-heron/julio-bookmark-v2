@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap" rel="stylesheet">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap"
+      rel="stylesheet"
+    />
     <title>Julios Bookmarking Tool</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Bookmarker 9000</h1>
+      <h1>Bookmarker 9000</h1>
     </header>
-    <main role='main'>
-        <section class='form-area'>
-            <div class="submit-buttons">
-                <button class="add-button" id="js-new-item-button" type="submit">New</button>
-                    <select class="filter-button" id="js-filter-button">
-                    <option value='0'>Min Rating</option>
-                    <option value='1'>☆</option>
-                    <option value='2'>☆☆</option>
-                    <option value='3'>☆☆☆</option>
-                    <option value='4'>☆☆☆☆</option>
-                    <option value='5'>☆☆☆☆☆</option>
-                </select>
-            </div>
-                <form id="submit-form" class='form hidden'>
-                    <input type="text" class="form-title" name="title" placeholder="Input Title" required>
-                    <div><input type="url" class="form-url" name="url" placeholder="Input URL" required></div>
-                    <div><input type="text" name="desc" class="form-descr" form='submit-form' placeholder='Input Description'></div>
-                    <div><select class="form-rate" type="submit" name="rating" form='submit-form'>
-                      <option value='0'>Choose a Rating</option>
-                      <option value='5'>☆☆☆☆☆</option>
-                      <option value='4'>☆☆☆☆</option>
-                      <option value='3'>☆☆☆</option>
-                      <option value='2'>☆☆</option>
-                      <option value='1'>☆</option>
-                    </select></div>
-                    <button type="submit" class="submit-form-button" for="submit-form">Submit</button>
-                    <button id="cancel-button">Cancel</button>
-                </form>
-        </section>
-        <section class='results'>
+    <main role="main">
+      <section class="form-area">
+        <div class="submit-buttons">
+          <button class="add-button" id="js-new-item-button" type="submit"
+            >New</button
+          >
+          <select class="filter-button" id="js-filter-button">
+            <option value="0">Min Rating</option>
+            <option value="1">☆</option>
+            <option value="2">☆☆</option>
+            <option value="3">☆☆☆</option>
+            <option value="4">☆☆☆☆</option>
+            <option value="5">☆☆☆☆☆</option>
+          </select>
+        </div>
+        <form id="submit-form" class="form hidden">
+          <input
+            type="text"
+            class="form-title"
+            name="title"
+            placeholder="Title"
+            required
+          />
+          <div
+            ><input
+              type="url"
+              class="form-url"
+              name="url"
+              placeholder="https://"
+              required
+          /></div>
+          <div
+            ><input
+              type="text"
+              name="desc"
+              class="form-descr"
+              form="submit-form"
+              placeholder="Description"
+          /></div>
+          <div
+            ><select
+              class="form-rate"
+              type="submit"
+              name="rating"
+              form="submit-form"
+            >
+              <option value="0">Choose a Rating</option>
+              <option value="5">☆☆☆☆☆</option>
+              <option value="4">☆☆☆☆</option>
+              <option value="3">☆☆☆</option>
+              <option value="2">☆☆</option>
+              <option value="1">☆</option>
+            </select></div
+          >
+          <button type="submit" class="submit-form-button" for="submit-form"
+            >Submit</button
+          >
+          <button id="cancel-button">Cancel</button>
+        </form>
+      </section>
+      <section class="results">
         <h2>My Bookmarks</h2>
-            <ul class="bookmark-input" aria-live="polite"></ul>
-        </section>
+        <ul class="bookmark-input" aria-live="polite"></ul>
+      </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type='module' src="bookmark.js"></script>
-    <script type='module' src="api.js"></script>
-    <script type='module' src="index.js"></script>
-</body>
+    <script type="module" src="bookmark.js"></script>
+    <script type="module" src="api.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
