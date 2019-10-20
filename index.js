@@ -1,5 +1,5 @@
 import bookmark from './bookmark.js';
-function main(){
+function main() {
   bookmark.loadData();
   bookmark.bindEventListeners();
 }
